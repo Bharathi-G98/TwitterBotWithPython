@@ -1,18 +1,18 @@
 
-###Prerequisites: 
+### Prerequisites: 
 >python 3.6,
 >MySql5.7,
 >tweepy,
 >flask
 
 
-##FOR RUNNING twitterCampaignModule.py
+## FOR RUNNING twitterCampaignModule.py
 
-#Command to run: 
+# Command to run: 
 
 sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 
-#Queries:
+# Queries:
 
 >create database twitter;
 >CREATE TABLE Competitors (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255));
@@ -22,7 +22,7 @@ sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 >CREATE TABLE Messages (id INT AUTO_INCREMENT PRIMARY KEY, message VARCHAR(700));          (must be poplulated before running code.)
 
 
-#Essential Components:
+# Essential Components:
 
 >database named twitter
 >>ENTITIES:
@@ -34,7 +34,7 @@ sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 
 *Note: in the post request, along with account creds, handle should be @something
 
-#HOW TO USE:
+# HOW TO USE:
 
 >if you are using a new account, hit /newAccount. Include the credentials in the request body.
 >wait till you recieve the response indicating your account has been temporarily blocked and verify your number.
