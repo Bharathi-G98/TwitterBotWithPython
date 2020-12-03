@@ -41,4 +41,4 @@ sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 >Now, you can hit /launchCampaign. Include your account credentials along with the twitter handle of the account whose followers must be targetted. If the account is inactive, the process will commence.
 >in arbitrary intervals, messages will be tweeted, tweets will be retweeted and followers of twitter handles that exist in the database will be followed. 
 
-## Alternatively, genericGetFollowers.py can be used to fetch and store followers in a csv file and tweetGeneric.py can be used to tweet, targetting the same.
+##Alternatively, genericGetFollowers.py can be used to fetch and store followers in a csv file and tweetGeneric.py can be used to tweet, targetting the same.
