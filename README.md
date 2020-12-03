@@ -1,18 +1,18 @@
 
-# Prerequisites: 
+## Prerequisites: 
 >python 3.6,
 >MySql5.7,
 >tweepy,
 >flask
 
 
-## FOR RUNNING twitterCampaignModule.py
+### FOR RUNNING twitterCampaignModule.py
 
-# Command to run: 
+#### Command to run: 
 
 sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 
-# Queries:
+#### Queries:
 
 >create database twitter;
 >CREATE TABLE Competitors (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255));
@@ -22,7 +22,7 @@ sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 >CREATE TABLE Messages (id INT AUTO_INCREMENT PRIMARY KEY, message VARCHAR(700));          (must be poplulated before running code.)
 
 
-# Essential Components:
+#### Essential Components:
 
 >database named twitter
 >>ENTITIES:
@@ -34,11 +34,11 @@ sudo python twitterCampaignModule.py >> Twitterlog.txt 2>&1 &
 
 *Note: in the post request, along with account creds, handle should be @something
 
-# HOW TO USE:
+#### HOW TO USE:
 
 >if you are using a new account, hit /newAccount. Include the credentials in the request body.
 >wait till you recieve the response indicating your account has been temporarily blocked and verify your number.
 >Now, you can hit /launchCampaign. Include your account credentials along with the twitter handle of the account whose followers must be targetted. If the account is inactive, the process will commence.
 >in arbitrary intervals, messages will be tweeted, tweets will be retweeted and followers of twitter handles that exist in the database will be followed. 
 
-##Alternatively, genericGetFollowers.py can be used to fetch and store followers in a csv file and tweetGeneric.py can be used to tweet, targetting the same.
+### Alternatively, genericGetFollowers.py can be used to fetch and store followers in a csv file and tweetGeneric.py can be used to tweet, targetting the same.
